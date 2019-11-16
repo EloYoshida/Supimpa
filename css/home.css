@@ -1,0 +1,82 @@
+body {
+	font-family: 'Berlin Sans FB Demi', sans-serif;
+	font-weight: 400;
+	color: rgb(19, 18, 18);
+	font-size: 12px;
+	line-height: 20px;
+    width: 100%;
+    background-image: url('../img/fundo.jpg');
+    background-size: 100%;
+}
+
+h2{
+    color: black;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: 0px solid #5b6669;
+}
+
+h4 {
+    font-family: 'Hind';
+    font-size: 25px;
+    
+  }
+ 
+h5 {
+    font-family: 'Hind';
+    
+    
+}
+
+h6 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    padding: 10px;
+    border: 0px solid #5b6669;
+}
+
+.logo {
+    position: absolute;
+    top: 8px;
+    left: 32px;
+}
+
+.navbar {
+    padding: 20px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+.img{
+      float: right;
+  }
+
+.feed{
+	width: 50%;
+	height: auto;
+	border-style: none;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px #0076a3;
+	margin-bottom: 25px;
+}
+
+.container{
+    text-align: center;  
+}
+
+.navjustify-content-endnavbar{
+    background-color: #fff !important;
+}
+
+.teste {
+    position: absolute; 
+    top: 1350px; 
+    left:1500px;
+}
