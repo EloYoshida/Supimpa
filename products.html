@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Products</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet"> <!-- Fonte Google -->
+    <link type="text/css" rel="stylesheet" href="css/home.css" /> <!-- CSS -->
+    
+    <!-- <script src="bootstrap/jquery-3.3.1.slim.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="bootstrap/popper.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            console.log("on ready !!");
+
+            $("button#lupa").each(function(index) {
+                console.log("lupa");
+                $(this).on("click", function(){
+
+                    $('#modalLabel').text($(this).parent().parent().find('#titulo').text());
+                    $('#imgModal').attr('src', $(this).parent().find('img').attr('src'));
+                    $('#myModal').modal();
+                });
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- Plug-in Facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0"></script>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			<a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item active">
+			<a class="nav-link" href="products.html">Produtos <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="faq.html">FAQ</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="contato.html">Contato</a>
+			</li>
+			</ul>
+			<span class="navbar-brand">
+			<img src="img/logosupimpa.jpg"width="110" height="60" class="d-inline-block align-top" alt="">
+			</span>	
+		</div>
+    </nav>
+
+
+
+    <br />
+    <br />
+
+
+    <section>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-4">
+
+                    <img src="img/papeln.jpg" class="img-fluid" style="width:100%;max-width:300px" />
+                    <button type="button" class="btn btn-primary" id="lupa" >
+                        <i class="fa fa-search fa-1x"></i>
+                    </button>
+                </div>
+                <div class="col-md-8">
+                    <h1 id="titulo" >Papel Higiênico Supimpa</h1>
+                    <h3>O produto principal da marca que espelha qualidade e bom preço</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr />
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/rolohig.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa">
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 id="titulo">Rolo papel higiênico empresa</h2>
+                            </div>
+                            <div class="card-text">
+                                Para você empresario, que quer um rolo barato para colocar nos banheiros de cliente e
+                                funcionários!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/lenco.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa" >
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 id="titulo">Lenço de papel macio</h2>
+                            </div>
+                            <div class="card-text">
+                                Lenço da linha Batuta, super macio, cuidado com sua face para te deixar bacana!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img src="img/rosa.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa" data-toggle="modal"
+                            data-target="#ModalLongoExemplo">
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        
+
+                        <div class="card-body" style="padding-top: 136px">
+                            <div class="card-title">
+                                <h2 id="titulo">Papel higiênico rosa aromatizado</h2>
+                            </div>
+                            <div class="card-text">
+                                Papel higiênico rosa com fragância agradavel para seus momentos!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/phpol.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa" data-toggle="modal"
+                            data-target="#ModalLongoExemplo">
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 id="titulo">Papel Higiênico Supimpa Prime</h2>
+                            </div>
+                            <div class="card-text">
+                                O mais novo lançamento da linha Supimpa, o papel higiênico hexagonal!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/recy.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa" data-toggle="modal"
+                            data-target="#ModalLongoExemplo">
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 id="titulo">Papel higiênico reciclado</h2>
+                            </div>
+                            <div class="card-text">
+                                Folhas de papel higiênico reciclado, macio e maior cuidado com o meio ambiente!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="img/umid.jpg" class="card-img-top" />
+                        <button type="button" class="btn btn-primary" id="lupa" data-toggle="modal"
+                            data-target="#ModalLongoExemplo">
+                            <i class="fa fa-search fa-1x"></i>
+                        </button>
+                        <br />
+                        <br />
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2 id="titulo">Lenço umedecido </h2>
+                            </div>
+                            <div class="card-text">
+                                Lenço umedecido para você e sua familia, cuidado e frescor!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body" style="text-align: center">
+                        <img id="imgModal" src="img/umid.jpg" style="width: 80%"  class="card-img-top" />
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
